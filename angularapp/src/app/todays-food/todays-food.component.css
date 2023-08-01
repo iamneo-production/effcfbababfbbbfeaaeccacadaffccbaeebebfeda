@@ -1,26 +1,19 @@
-.calorie-container {
-    display: table;
-    width: 400px;
-    height: 300px;
-    background-color: rgb(248, 195, 79);
-    border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
-    position: absolute;
-  }
-  
-  .items {
-    font-size: 20px;
-  }
-  
-  .table-position{
-    display: flex;
-    align-items: flex-end;
-    padding: 10px;
-    margin-top: 10px;
-    float: right;
-    position: relative;
-    right: 0;
-    width: 400px;
-    height: 400px;
-  }
-  
+table {
+  margin:20px;
+  padding: 1rem;
+  border:1px solid black;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgb(193, 188, 188);
+}
+table th{
+margin: 1rem;
+}
+#todays-food-list{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+margin: 32px 10px;
+width: 250px;
+border-radius: 10px;
+padding: 1rem;
+
+}

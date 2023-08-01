@@ -1,4 +1,13 @@
-<app-header></app-header>
-<app-today [totalCalories]="totalCalories"></app-today>
-<app-new-food (totalCaloriesEvent)="receiveTotalCalories($event)"></app-new-food>
-<router-outlet></router-outlet>
+<div id="headerCointainer">
+    Calory Tracker
+</div>
+<div id="container">
+<div class="sec-1">
+<app-search-food></app-search-food>
+<app-add-new-food></app-add-new-food>
+</div>
+<div class="sec-2">
+<app-todays-food></app-todays-food>
+<app-app-food-list></app-app-food-list>
+</div>
+</div>

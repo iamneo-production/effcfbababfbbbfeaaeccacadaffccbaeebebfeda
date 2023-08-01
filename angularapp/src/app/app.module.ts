@@ -1,26 +1,32 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './component/header/header.component';
-import { NewFoodComponent } from './component/new-food/new-food.component';
-import { TodayComponent } from './todays-food/today.component';
-import { FoodSearchPipe } from './component/new-food/food-search.pipe';
+import { AppFoodListComponent } from './app-food-list/app-food-list.component';
+import { FilterPipe } from './pipes/filter.pipe';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FoodService } from './services/food.service';
+import { SearchFoodComponent } from './search-food/search-food.component';
+import { AddNewFoodComponent } from './add-new-food/add-new-food.component';
+import { TodaysFoodComponent } from './todays-food/todays-food.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    NewFoodComponent,
-    TodayComponent,
-    FoodSearchPipe
+    AppFoodListComponent,
+    FilterPipe,
+    SearchFoodComponent,
+    AddNewFoodComponent,
+    TodaysFoodComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [FoodService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
