@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Food } from './../interface/food';
-import { items } from './../interface/foods';
+import { Food } from '../interface/food';
+import { items } from '../interface/foods';
 
 @Component({
   selector: 'app-today',
